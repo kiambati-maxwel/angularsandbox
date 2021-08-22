@@ -1,0 +1,17 @@
+.animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 0.5px;
+  height: 500px;
+  width: 70%;
+  margin: auto;
+  margin-top: 2em;
+}
+.animate-button {
+  width: 7em;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,18 @@
+<nav>
+  <button (click)="toggle()">Toggle Open/Close</button>
+</nav>
+
+<!-- The animation state is set in the html -->
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <p>The box is now {{ isOpen ? "Open" : "Closed" }}!</p>
+</div>
+
+<div class="white" [@popFade] *ngIf="isVisible">
+  <p>ngIf with animations</p>
+</div>
+
+<b @fadeAnimation *ngIf="isVisible">fade animation</b>
+
+<ul [@listAnimation]="items.length" *ngIf="isVisible" class="items">
+  <li *ngFor="let item of items" class="item">{{ item }}</li>
+</ul>
